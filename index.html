@@ -10,11 +10,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
- <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
-       <script src="https://unpkg.com/video.js/dist/video.js"></script>
-    <script src="https://unpkg.com/videojs-flash/dist/videojs-flash.js"></script>
-    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
-    </head>
+</head>
 
 <body style="background: black">
     <form action="https://s.quangkv.com/download" name="formDownload" method="post">
@@ -44,11 +40,7 @@
                 
             
             <hr class="my-4">
-               <video id=example-video width=960 height=400 class="video-js vjs-default-skin" controls>
-          <source
-             src="http://198.13.63.21/video/hls/YT1sPTHvtMKu5wgTO1YIow/1609919423/hbo.m3u8"
-             type="application/x-mpegURL">
-        </video>
+               
             </div>
 
         </div>
@@ -62,23 +54,7 @@
             formDownload.file.value = fileName;
             formDownload.submit();
         }</script>
- <script>
-      (function(window, videojs) {
-        var player = window.player = videojs('example-video');
 
-        // hook up the video switcher
-        var loadUrl = document.getElementById('load-url');
-        var url = document.getElementById('url');
-        loadUrl.addEventListener('submit', function(event) {
-          event.preventDefault();
-          player.src({
-            src: url.value,
-            type: 'application/x-mpegURL'
-          });
-          return false;
-        });
-      }(window, window.videojs));
-    </script>
 </body>
 
 </html>
