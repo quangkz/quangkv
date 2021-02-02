@@ -67,8 +67,8 @@
 			</table>
 		</div>
 	</div>
-	<video id="example-video" class="video-js vjs-default-skin" style="display: block; margin: 0 auto" autoplay controls>
-        </video>
+	<div id="player-w" style="display: block; margin: 0 auto"><video id="example-video" style="width: 100%; height: 100%;" class="video-js vjs-default-skin"  autoplay controls>
+		</video></div>
 	<div style="text-align: center; margin-top: 20px"><a href="https://www.androidfilehost.com/?w=files&flid=321960">Download Kplus Lite</a></div>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -84,8 +84,8 @@
 	var w = document.body.offsetWidth;
             if (w > 720) w = 720;
             var h = parseInt((423 / 720) * w);
-            document.getElementById('example-video').style.width = w + 'px';
-            document.getElementById('example-video').style.height = h + 'px';
+            document.getElementById('player-w').style.width = w + 'px';
+            document.getElementById('player-w').style.height = h + 'px';
       (function(window, videojs) {
         var player = window.player = videojs('example-video');
 
