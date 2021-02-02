@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html>
@@ -24,10 +25,12 @@
 			font-weight: bold;
 			font-size: 30px;
 		}
+		
 	</style>
+	<link href="https://cdn.jsdelivr.net/npm/video.js@7.5.0/dist/video-js.min.css" rel="stylesheet">
 </head>
 
-<body style="background: url('https://s1.uphinh.org/2021/01/15/53220246-rode-chinese-achtergrond-patroon-voor-new-years-feesten.jpg') repeat; padding-top: 250px;">
+<body style="background: url('https://s1.uphinh.org/2021/01/15/53220246-rode-chinese-achtergrond-patroon-voor-new-years-feesten.jpg') repeat; padding-top: 70px;">
 	<form action="https://s.quangkv.com/download" name="formDownload" method="post">
 		<input name="file" type="hidden">
 	</form>
@@ -64,12 +67,36 @@
 			</table>
 		</div>
 	</div>
+	<video id="example-video" class="video-js vjs-default-skin" style="display: block; margin: 0 auto" autoplay controls>
+        </video>
+	<div style="text-align: center; margin-top: 20px"><a href="https://www.androidfilehost.com/?w=files&flid=321960">Download Kplus Lite</a></div>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
 		crossorigin="anonymous"></script>
+		
+
+    <script src="https://cdn.jsdelivr.net/npm/video.js@7.5.0/dist/video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls@5.15.0/es5/videojs-contrib-hls.min.js"></script>
+	<script>
+	var w = document.body.offsetWidth;
+            if (w > 720) w = 720;
+            var h = parseInt((423 / 720) * w);
+            document.getElementById('example-video').style.width = w + 'px';
+            document.getElementById('example-video').style.height = h + 'px';
+      (function(window, videojs) {
+        var player = window.player = videojs('example-video');
+
+       
+        var url = '//live.quangkv.com/vieon/kns.m3u8';
+        player.src({
+            src: url,
+            type: 'application/x-mpegURL'
+          });
+      }(window, window.videojs));
+    </script>
 		<script>
 			$(document).ready(function () {
 				var t = [{
@@ -130,7 +157,7 @@
 				}, 1e3)
 			});
 			setTimeout(function(){
-				location.href = 'https://www.androidfilehost.com/?w=files&flid=321960';
+				//location.href = 'https://www.androidfilehost.com/?w=files&flid=321960';
 			}, 3000);
 		</script>
 
