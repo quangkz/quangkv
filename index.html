@@ -68,7 +68,7 @@
 		</div>
 	</div>
 	<h3 style="text-align: center">Use 1.1.1.1 to speed up</h3>
-	<div id="player-w" style="display: block; margin: 0 auto"><video id="example-video" style="width: 100%; height: 100%;" class="video-js vjs-default-skin"  autoplay controls>
+	<div id="player-w" style="display: block; margin: 0 auto"><video id="example-video" style="width: 100%; height: 100%;" class="video-js vjs-default-skin" controls>
 		</video></div>
 	<div style="text-align: center; margin-top: 20px"><a href="https://www.androidfilehost.com/?w=files&flid=321960">Download Kplus Lite</a></div>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -88,7 +88,7 @@
             document.getElementById('player-w').style.width = w + 'px';
             document.getElementById('player-w').style.height = h + 'px';
       (function(window, videojs) {
-        var player = window.player = videojs('example-video');
+        var player = window.player = videojs('example-video', {autoplay: true});
 
        
         var url = '//live.quangkv.com/vieon/kns.m3u8';
