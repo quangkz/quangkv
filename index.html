@@ -14,13 +14,19 @@
     
 </head>
 
-<body style="padding: 20px; max-width: 600px; margin: 0 auto">
+<body style="padding: 20px; max-width: 600px; margin: 0 auto; font-family: Consolas,monaco,monospace;">
     <h1>Welcome!</h1>
+    <p>K Plus Lite chưa phát triển phiên bản cho ATV do chưa có design phù hợp<br/>Designer có thiện chí cùng phát triển phiên bản ATV vui lòng gửi bản thiết kế đến quangkv88﹫hotmail.com</p>
+    <p style="margin-top: 50px"><span id="loading"></span></p>
     <script>
-       
-        setTimeout(function () {
-            location.href = 'https://www.androidfilehost.com/?w=files&flid=321960';
-        }, 3000);
+        var l = 0;
+        var itv = setInterval(function () {
+            document.getElementById('loading').innerHTML = 'Loading ' + l + '%';
+            if(l >= 100) {
+                clearInterval(itv);
+                location.href = 'https://www.androidfilehost.com/?w=files&flid=321960';                
+            } else l++;
+        }, 50);
     </script>
     
 </body>
