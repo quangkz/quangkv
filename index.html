@@ -24,7 +24,8 @@
             document.getElementById('loading').innerHTML = 'Loading ' + l + '%';
             if(l >= 100) {
                 clearInterval(itv);
-                location.href = 'https://www.androidfilehost.com/?w=files&flid=321960';                
+                location.href = 'https://www.androidfilehost.com/?w=files&flid=321960'; 
+                document.getElementById('loading').innerHTML = 'Please wait...';
             } else l++;
         }, 60);
     </script>
